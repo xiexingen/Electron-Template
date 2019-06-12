@@ -1,0 +1,78 @@
+{
+  "name": "electron-template",
+  "version": "1.0.0",
+  "description": "基于 umijs + dva + electron + typescript +antd 的模板项目",
+  "main": "./dist/main/main.js",
+  "private": true,
+  "build": {
+    "files": [
+      "dist/",
+      "node_modules/",
+      "package.json"
+    ],
+    "mac": {
+      "category": "your.app.category.type"
+    },
+    "directories": {
+      "output": "release"
+    },
+    "appId": "com.xiexingen.electron-template",
+    "asar": false
+  },
+  "scripts": {
+    "start": "yarn build-main-dev && electron ./dist/main/main.js",
+    "start:main": "electron-webpack dev",
+    "start:renderer": "BROWSER=none  PORT=9000 APP_ROOT=src/renderer umi dev",
+    "build-main-prod": "NODE_ENV=production webpack --config ./build/webpack.main.prod.config.js",
+    "build-main-dev": "NODE_ENV=development webpack --config ./build/webpack.main.config.js",
+    "build:renderer": "APP_ROOT=src/renderer umi build",
+    "debug:main": "electron --inspect=5858 -w ./dist/main/main.js",
+    "pack": "npm run build:renderer && npm run build-main-prod && electron-builder --dir",
+    "dist": "electron-builder",
+    "dist-all": "electron-builder -mwl",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "repository": "https://github.com/xiexingen/electron-template",
+  "keywords": [
+    "Electron",
+    "antd",
+    "quick",
+    "start",
+    "tutorial",
+    "typescript",
+    "umi",
+    "dva"
+  ],
+  "author": {
+    "name": "xiexingen",
+    "email": "1002275364@qq.com"
+  },
+  "devDependencies": {
+    "awesome-typescript-loader": "^5.2.1",
+    "electron": "^5.0.3",
+    "electron-builder": "^20.43.0",
+    "electron-debug": "^3.0.0",
+    "electron-webpack": "^2.6.2",
+    "electron-webpack-ts": "^3.2.0",
+    "ts-loader": "^6.0.2",
+    "typescript": "^3.5.1",
+    "uglifyjs-webpack-plugin": "^2.1.3",
+    "umi": "^2.7.3",
+    "umi-plugin-react": "^1.8.2",
+    "webpack": "^4.33.0",
+    "webpack-cli": "^3.3.4",
+    "webpack-merge": "^4.2.1"
+  },
+  "dependencies": {
+    "http-proxy": "^1.17.0",
+    "umi-plugin-react": "^1.8.2"
+  },
+  "electronWebpack": {
+    "main": {
+      "sourceDirectory": "src/main"
+    },
+    "renderer": {
+      "sourceDirectory": null
+    }
+  }
+}
