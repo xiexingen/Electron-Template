@@ -27,7 +27,7 @@
     "build-main-dev": "NODE_ENV=development webpack --config ./build/webpack.main.config.js",
     "build:renderer": "APP_ROOT=src/renderer umi build",
     "debug:main": "electron --inspect=5858 -w ./dist/main/main.js",
-    "pack": "npm run build:renderer && npm run build-main-prod && electron-builder --dir",
+    "pack": "yarn build:renderer && yarn build-main-prod && electron-builder --dir",
     "dist": "electron-builder",
     "dist-all": "electron-builder -mwl",
     "postinstall": "electron-builder install-app-deps"
