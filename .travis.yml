@@ -49,3 +49,7 @@ script:
 
 before_cache:
   - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then rm -rf $HOME/.cache/electron-builder/wine; fi
+
+branches:
+  except:
+    - "/\\d+\\.\\d+\\.\\d+$/"
