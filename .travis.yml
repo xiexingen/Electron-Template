@@ -63,3 +63,6 @@ deploy:
     - dist/*.dmg
     - dist/*.snap
     - dist/*.AppImage
+  on:
+    tags: true
+    branch: master
