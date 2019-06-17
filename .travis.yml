@@ -10,7 +10,13 @@ node_js: '12'
 
 branches:
   only:
-  - master1
+    - master
+    
+#    - "/v\d.*/"
+
+tags:
+  only:
+    - /^v[0-9]+.[0-9]+.[0-9]+$/
 
 os:
   - linux
