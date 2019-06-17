@@ -74,7 +74,7 @@
 
 ### Mac(10.9+)
 
-[下载](https://github.com/xiexingen/Electron-TEMPLATE/releases/download/1.0.1/ELECTRON-TEMPLATE-1.0.1-mac.dmg) `.dmg` 或者使用 `homebrew`:
+[下载](https://github.com/xiexingen/Electron-TEMPLATE/releases/download/v1.0.1/ELECTRON-TEMPLATE-1.0.1-mac.dmg) `.dmg` 或者使用 `homebrew`:
 
 ```
 brew cask install ELECTRON-TEMPLATE
@@ -90,7 +90,7 @@ $ sudo dpkg -i ELECTRON-TEMPLATE-1.0.1-linux-amd64.deb
 
 ### Win
 
-[下载](https://github.com/xiexingen/Electron-TEMPLATE/releases/download/1.0.1/ELECTRON-TEMPLATE-Setup-1.0.1.exe)
+[下载](https://github.com/xiexingen/Electron-TEMPLATE/releases/download/v1.0.1/ELECTRON-TEMPLATE-Setup-1.0.1.exe)
 
 
 
