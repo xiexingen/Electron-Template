@@ -1,7 +1,7 @@
-dist/
-release/
-.DS_Store
-.idea/
-yarn-error.log
-npm-debug.log
-src/renderer/pages/.umi/
+**/*.md
+**/*.svg
+**/*.ejs
+**/*.html
+package.json
+.umi
+.umi-production

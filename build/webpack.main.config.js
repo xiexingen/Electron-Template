@@ -13,15 +13,16 @@ module.exports = merge.smart(baseConfig, {
       {
         test: /\.tsx?$/,
         loader: 'awesome-typescript-loader',
+        query: {
+          configFileName: './build/tsconfig.json',
+        },
         exclude: /node_modules/,
       },
     ],
   },
   plugins: [
     new webpack.DefinePlugin({
-      'process.env.NODE_ENV': JSON.stringify(
-        process.env.NODE_ENV || 'development'
-      ),
+      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'development'),
     }),
   ],
   mode: 'development',

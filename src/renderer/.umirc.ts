@@ -11,11 +11,8 @@ export default {
         antd: true,
         dva: true,
         dynamicImport: true,
-        title: 'umi-electron-typescript',
+        title: 'Electron-Template',
         dll: true,
-        routes: {
-          exclude: [],
-        },
         hardSource: false,
         routes: {
           exclude: [/components/],
