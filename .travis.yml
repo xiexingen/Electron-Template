@@ -11,7 +11,9 @@ node_js: '12'
 branches:
   only:
     - master
-    - "/v\d.*/"
+  tags: 
+    - all
+    #- /^deploy-.*$/
 
 # tags:
 #   only:
