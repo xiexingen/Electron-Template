@@ -12,8 +12,8 @@ branches:
   only:
     - master
   tags: 
-    - all
-    #- /^deploy-.*$/
+    - /^v.*$/
+    #- all
 
 # tags:
 #   only:
