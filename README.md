@@ -58,3 +58,59 @@
 
 ## 截图
 
+### Windows
+
+## 功能
+
+- [x] umi启动页面
+
+## 更多功能
+
+- [ ] todo
+
+## 安装
+
+[**这里**](https://github.com/xiexingen/Electron-Template/releases/latest) 去下载最新版本，或者下面的指定系统版本。
+
+### Mac(10.9+)
+
+[下载](https://github.com/xiexingen/Electron-TEMPLATE/releases/download/v1.0.0/ELECTRON-TEMPLATE-1.0.0-mac.dmg) `.dmg` 或者使用 `homebrew`:
+
+```
+brew cask install ELECTRON-TEMPLATE
+```
+
+### Linux
+
+'Debian / Ubuntu' 使用 `.deb` [下载](https://github.com/xiexingen/Electron-TEMPLATE/releases/download/v1.0.0/ELECTRON-TEMPLATE-1.0.0-linux-amd64.deb):
+
+```
+$ sudo dpkg -i ELECTRON-TEMPLATE-1.0.0-linux-amd64.deb
+```
+
+其他发行版本用 `.Appimage` [下载](https://github.com/xiexingen/Electron-TEMPLATE/releases/download/v1.0.0/ELECTRON-TEMPLATE-1.0.0-linux-x86_64.AppImage):
+
+```
+$ chmod u+x ELECTRON-TEMPLATE-1.0.0-linux-x86_64.AppImage
+$ ./ELECTRON-TEMPLATE-1.0.0-linux-x86_64.AppImage
+```
+
+### Win
+
+[下载](https://github.com/xiexingen/Electron-TEMPLATE/releases/download/v1.0.0/ELECTRON-TEMPLATE-Setup-1.0.0.exe)
+
+
+
+## 欢迎参与贡献
+
+发现了错误? 向我发起一个 [PR](https://github.com/xiexingen/ELECTRON-TEMPLATE/pulls) 吧!
+参考 [Commit message 和 Change log 编写指南 - 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2016/01/commit_message_change_log.html) 提交 commit 即可。
+
+## 致谢
+- [@wangtianlun](https://github.com/wangtianlun)提供的模板([umi-electron-typescript](https://github.com/wangtianlun/umi-electron-typescript))，我是在这个模板上进行修改的。
+- [Electron](https://github.com/electron/electron), [Umi](https://github.com/umijs/umi), [Dva](https://github.com/dvajs/dva), [Antd](https://github.com/ant-design/ant-design)等框架的开发者们。
+
+## 协议
+
+MIT © [xiexingen](https://github.com/xiexingen)
+
