@@ -50,6 +50,16 @@ script:
 before_cache:
   - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then rm -rf $HOME/.cache/electron-builder/wine; fi
 
-branches:
-  except:
-    - "/\\d+\\.\\d+\\.\\d+$/"
+deploy:
+  provider: releases
+  api_key: $GH_TOKEN
+  skip_cleanup: true
+  draft: true
+  overwrite: true
+  file_glob: true
+  file:
+    - dist/*.exe
+    - dist*.zip
+    - dist/*.dmg
+    - dist/*.snap
+    - dist/*.AppImage
