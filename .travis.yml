@@ -10,7 +10,7 @@ node_js: '12'
 
 branches:
   only:
-    - master
+    #- master
     - /^v.*$/
   # tags: 
   #   - /^v.*$/
