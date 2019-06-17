@@ -10,8 +10,7 @@ node_js: '12'
 
 branches:
   only:
-  - master
-  - /~ ^v[0-9]+.[0-9]+.[0-9]+$/
+  - master1
 
 os:
   - linux
