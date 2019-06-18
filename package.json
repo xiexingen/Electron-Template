@@ -1,6 +1,6 @@
 {
   "name": "electron-template",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "基于 umijs + dva + electron + typescript +antd 的模板项目",
   "main": "./dist/main/main.js",
   "private": true,
