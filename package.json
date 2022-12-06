@@ -2,11 +2,11 @@
   "name": "electron-template",
   "version": "1.0.0",
   "description": "A Electron application",
-  "main": "main.js",
+  "main": "index.js",
   "scripts": {
-    "start": "electron-forge start",
-    "package": "electron-forge package",
-    "make": "electron-forge make"
+    "start": "nodemon --watch index.js --exec electron .",
+    "build-icon": "electron-icon-builder --input=./public/icon.png --output=build --flatten",
+    "build": "electron-builder"
   },
   "keywords": [
     "Electron",
@@ -15,14 +15,31 @@
   ],
   "author": "xiexingen",
   "devDependencies": {
-    "@electron-forge/cli": "^6.0.4",
-    "@electron-forge/maker-deb": "^6.0.4",
-    "@electron-forge/maker-rpm": "^6.0.4",
-    "@electron-forge/maker-squirrel": "^6.0.4",
-    "@electron-forge/maker-zip": "^6.0.4",
-    "electron": "^22.0.0"
+    "electron": "^22.0.0",
+    "electron-builder": "^22.14.5",
+    "electron-icon-builder": "^2.0.1",
+    "nodemon": "^2.0.20"
   },
-  "dependencies": {
-    "electron-squirrel-startup": "^1.0.0"
+  "build": {
+    "appId": "easy spec",
+    "productName": "Easy Spec",
+    "copyright": "Copyright © 2021 Prin-Cen",
+    "directories": {
+      "buildResources": "build",
+      "output": "dist"
+    },
+    "win": {
+      "target": [
+        "msi",
+        "nsis"
+      ],
+      "icon": "build/icons/icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "language": "2052",
+      "perMachine": true,
+      "allowToChangeInstallationDirectory": true
+    }
   }
 }

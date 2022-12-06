@@ -7,10 +7,11 @@ function createWindow () {
     width: 800,
     height: 600,
     skipTaskbar:true,
-    icon: path.join(__dirname, 'assets/icons/icon.png')
+    icon: path.join(__dirname, 'build/icons/icon.ico')
   })
   // 隐藏默认菜单
-  mainWindow.setMenu(null);
+  // mainWindow.setMenu(null);
+  mainWindow.removeMenu()
 
   // 触发关闭时触发
   mainWindow.on('close', (event) => {
@@ -22,7 +23,7 @@ function createWindow () {
   });
 
    // 新建托盘
-   const tray = new Tray(path.join(__dirname, 'assets/icons/tray.ico'));
+   const tray = new Tray(path.join(__dirname, 'build/icons/icon.ico'));
    // 托盘名称
    tray.setToolTip('Easy Spec');
    // 托盘菜单
